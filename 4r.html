@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>4R - Acreditaciones de Calidad</title>
+
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.9.6/lottie.min.js"></script>  
+  
+  <style>
+    /* Estilos generales */
+    body {
+      font-family: 'Roboto', Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #fff;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+    background-color: #698b9a;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+}
+
+nav {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem; /* Espaciado uniforme entre elementos */
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0;
+    margin-top: 10;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+        header .logo {
+            display: flex;
+            align-items: center;
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        header .logo img {
+            width: 40px;
+            margin-right: 10px;
+        }
+
+
+.cta {
+            background-color: #fff;
+            color: #1E2A4A;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+.hero {
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 40%), 
+                url('medical.jpg') no-repeat left 10% top 25% / cover;
+    min-height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Mueve el contenido a la izquierda */
+    color: #f8f9fa;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    padding: 20px;
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Alinea el texto a la izquierda */
+    text-align: left; /* Asegura que el texto esté alineado a la izquierda */
+    gap: 10px;
+    max-width: 700px; /* Limita el ancho del contenido para mejor lectura */
+    padding-left: 50px; /* Ajusta según la necesidad para separarlo del borde */
+}
+
+.hero h2 {
+    font-size: 36px;
+    margin: 0;
+    color: #000;
+}
+
+.hero p {
+    font-size: 18px;
+    max-width: 700px;
+    color: #ffffff;
+    margin: 0;
+}
+
+    section {
+      padding: 50px 20px;
+    }
+
+    section h2 {
+      text-align: center;
+      font-size: 28px;
+      margin-bottom: 30px;
+      color: #000;
+    }
+
+    .services {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
+
+    .service {
+      flex: 1 1 300px;
+      padding: 20px;
+      margin: 10px;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      background-color: #fff;
+      text-align: center;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .service:hover {
+      transform: scale(1.05);
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #000;
+      color: #fff;
+      position: relative;
+      bottom: 0;
+      width: 100%;
+    }
+
+    .contact-form {
+      max-width: 500px;
+      margin: 0 auto;
+    }
+
+    .contact-form input, .contact-form textarea, .contact-form button {
+      width: 100%;
+      margin: 10px 0;
+      padding: 10px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      font-size: 16px;
+    }
+
+    .contact-form button {
+      background-color: #000;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .contact-form button:hover {
+      background-color: #333;
+    }
+
+    #servicios {
+      background-color: #f8f9fa;
+    }
+
+    #empresas {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f8f9fa; /* Fondo claro */
+}
+
+.empresas-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px; /* Espacio entre imágenes */
+    padding: 20px;
+}
+
+.empresa-img {
+    width: 150px; /* Tamaño uniforme */
+    height: 100px; /* Altura fija para alineación */
+    object-fit: contain; /* Ajusta la imagen sin deformarla */
+    background-color: white; /* Fondo blanco para imágenes con transparencia */
+    padding: 10px; /* Espaciado interno para imágenes más pequeñas */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.empresa-img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+
+  </style>
+</head>
+<body>
+  <header>
+        <div class="logo">
+        <div id="lottie-logo"></div>
+          4R
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#nosotros">Nosotros</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+        <a href="#" class="cta">Acceso Campus</a>
+    </header>
+
+<div class="hero">
+    <div class="hero-content">
+        <h2>Grupo 4R</h2>
+        <p>Especialistas en acreditaciones de calidad para centros de salud, brindando asesoría integral en la implementación de normativas y estándares para la excelencia en la gestión y prestación de servicios.</p>
+    </div>
+</div>
+
+  <section id="servicios">
+    <h2>Servicios</h2>
+    <div class="services">
+      <div class="service">
+        <h3>Auditorías</h3>
+        <p>Evaluamos tus procesos internos para garantizar el cumplimiento de estándares.</p>
+      </div>
+      <div class="service">
+        <h3>Capacitaciones</h3>
+        <p>Brindamos capacitaciones personalizadas para tu equipo de trabajo.</p>
+      </div>
+      <div class="service">
+        <h3>Consultoría</h3>
+        <p>Te asesoramos en todo el proceso de certificación y acreditación.</p>
+      </div>
+    </div>
+  </section>
+
+<section id="empresas">
+    <h2>Empresas que confían en nosotros</h2>
+    <div class="empresas-container">
+        <img src="sm.jpg" class="empresa-img" alt="Empresa 1">
+        <img src="sa.jpg" class="empresa-img" alt="Empresa 2">
+        <img src="rf.png" class="empresa-img" alt="Empresa 3">
+        
+    </div>
+</section>
+
+
+  <section id="nosotros">
+    <h2>Nosotros</h2>
+    <p>En 4R, contamos con un equipo multidisciplinario dedicado a la excelencia en el sector de la salud. Nuestro objetivo es ayudarte a alcanzar tus metas de calidad y certificación.</p>
+  </section>
+
+  <section id="contacto">
+    <h2>Contacto</h2>
+    <div class="contact-form">
+      <form>
+        <input type="text" name="name" placeholder="Tu nombre" required />
+        <input type="number" name="phone" placeholder="Tu telefono de contacto" required />
+        <input type="email" name="email" placeholder="Tu email" required />
+        <textarea name="message" placeholder="Tu mensaje" rows="5" required></textarea>
+        <button type="submit">Enviar</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy;©Copyright 2025 Grupo 4r - Todos los derechos reservados</p>
+  </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+  <script type="text/javascript"  src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script src="script.js"></script></body>
+</html>
+
