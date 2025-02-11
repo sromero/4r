@@ -1,0 +1,283 @@
+/* Estilos generales */
+    body {
+      font-family: 'Roboto', Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #fff;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+    background-color: #698b9a;
+    padding: 15px 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+}
+
+nav {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Centra verticalmente los elementos */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem; /* Espaciado uniforme entre elementos */
+    padding: 0;
+    margin: 0; /* Elimina márgenes no deseados */
+    align-items: center; /* Asegura que los elementos se alineen en el centro */
+}
+
+
+nav ul li {
+    margin: 0; /* Evita desplazamiento no deseado */
+    display: flex;
+    align-items: center; /* Centra los elementos dentro de cada <li> */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #1e2a4a;
+    font-weight: bold;
+    display: flex;
+    align-items: center; /* Centra el texto del enlace */
+    height: 100%; /* Asegura que el enlace llene el <li> */
+    padding: 10px 0; /* Espaciado uniforme */
+}
+
+        header .logo {
+            display: flex;
+            align-items: center;
+            font-size: 1.5rem;
+            font-weight: bold;
+            width: 150px;
+
+        }
+
+        header .logo img {
+            width: 40px;
+            margin-right: 10px;
+        }
+
+
+.cta {
+            background-color: #a4b9dd;
+            color: #1E2A4A;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+.hero {
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 40%), 
+                url('medical.jpg') no-repeat left 10% top 25% / cover;
+    min-height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Mueve el contenido a la izquierda */
+    color: #f8f9fa;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    padding: 20px;
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Alinea el texto a la izquierda */
+    text-align: left; /* Asegura que el texto esté alineado a la izquierda */
+    gap: 10px;
+    max-width: 700px; /* Limita el ancho del contenido para mejor lectura */
+    padding-left: 50px; /* Ajusta según la necesidad para separarlo del borde */
+}
+
+.hero h2 {
+    font-size: 36px;
+    margin: 0;
+    color: #000;
+}
+
+.hero p {
+    font-size: 18px;
+    max-width: 700px;
+    color: #ffffff;
+    margin: 0;
+}
+
+    section {
+      padding: 50px 20px;
+    }
+
+    section h2 {
+      text-align: center;
+      font-size: 28px;
+      margin-bottom: 30px;
+      color: #000;
+    }
+
+    .services {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
+
+    .service {
+      flex: 1 1 300px;
+      padding: 20px;
+      margin: 10px;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      background-color: #fff;
+      text-align: center;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .service:hover {
+      transform: scale(1.05);
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #000;
+      color: #fff;
+      position: relative;
+      bottom: 0;
+      width: 100%;
+    }
+
+    .contact-form {
+      max-width: 500px;
+      margin: 0 auto;
+    }
+
+    .contact-form input, .contact-form textarea, .contact-form button {
+      width: 100%;
+      margin: 10px 0;
+      padding: 10px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      font-size: 16px;
+    }
+
+    .contact-form button {
+      background-color: #000;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .contact-form button:hover {
+      background-color: #333;
+    }
+
+    #servicios {
+      background-color: #f8f9fa;
+    }
+
+    #empresas {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f8f9fa; /* Fondo claro */
+}
+
+.empresas-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px; /* Espacio entre imágenes */
+    padding: 20px;
+}
+
+.empresa-img {
+    width: 150px; /* Tamaño uniforme */
+    height: 100px; /* Altura fija para alineación */
+    object-fit: contain; /* Ajusta la imagen sin deformarla */
+    background-color: white; /* Fondo blanco para imágenes con transparencia */
+    padding: 10px; /* Espaciado interno para imágenes más pequeñas */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.empresa-img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+#nosotros {
+    background-color: #f8f9fa;
+    padding: 80px 20px;
+}
+
+.nosotros-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Separa el texto y la imagen */
+    max-width: 1100px;
+    margin: 0 auto;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.nosotros-text {
+    flex: 1;
+    min-width: 300px;
+}
+
+.nosotros-text h2 {
+    font-size: 32px;
+    color: #1E2A4A;
+    margin-bottom: 15px;
+}
+
+.nosotros-text p {
+    font-size: 18px;
+    color: #333;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.nosotros-text strong {
+    color: #698b9a;
+}
+
+.nosotros-img {
+    flex: 1;
+    text-align: right; /* Alinea la imagen a la derecha */
+    min-width: 250px;
+}
+
+.nosotros-img img {
+    width: 80%; /* Reduce el tamaño de la imagen */
+    max-width: 300px; /* Ajusta el tamaño máximo */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1px 30px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo-img {
+    width: 150px;  /* Ajusta el tamaño según sea necesario */
+    height: auto;
+}
+
