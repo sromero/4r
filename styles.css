@@ -1,0 +1,279 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    background-color: #f8f9fa;
+}
+
+header {
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+.logo-img {
+    height: 80px; /* Ajusta según necesites */
+    width: auto;
+}
+.hero {
+
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 40%), 
+                url('woman-working-as-doctor.jpg') no-repeat left 10% top 25% / cover;
+     min-height: 60vh;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    color: #f8f9fa;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Alinea el texto a la izquierda */
+    text-align: left; /* Asegura que el texto esté alineado a la izquierda */
+    gap: 10px;
+    max-width: 700px; /* Limita el ancho del contenido para mejor lectura */
+    padding-left: 10px; /* Ajusta según la necesidad para separarlo del borde */
+}
+.hero h2 {
+    font-size: 36px;
+    margin: 15px;
+    color: #eeeeee;
+}
+
+.hero p {
+    font-size: 18px;
+    max-width: 700px;
+    color: #ffffff;
+    margin: 15px;
+}
+.card {
+    border: none;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+.btn-primary {
+    background: linear-gradient(90deg, #798598, #05050569);
+    border: none;
+}
+footer {
+    background: linear-gradient(90deg, #798598, #05050569);
+    color: white;
+}
+footer p {
+    margin: 0;
+}
+
+.btn-primary {
+background: linear-gradient(90deg, #798598, #05050569);
+    border: none;
+    color: #ffffff;
+
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2)
+}
+
+.btn-primary:hover {
+    background: linear-gradient(90deg, #798598, #60096c29);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+}
+
+.navbar-light .navbar-toggler {
+    border-color: rgba(255, 255, 255, 0.5);
+}
+
+.navbar-light .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba%28255, 255, 255, 0.5%29' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+.nav-link {
+    font-weight: 500;
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+
+.nav-link:hover {
+    color: #f8f9fa;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #000 !important;
+}
+
+.navbar-nav .nav-link {
+    color: #000;
+    font-weight: 500;
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+
+.navbar-nav .nav-link:hover {
+    color: rgb(96 242 255);
+}
+
+
+#nosotros {
+    background-color: #f8f9fa;
+    padding: 80px 20px;
+}
+
+.nosotros-container {
+    text-align: justify;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Separa el texto y la imagen */
+    max-width: 1100px;
+    margin: 0 auto;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.nosotros-text {
+    flex: 1;
+    min-width: 300px;
+}
+
+.nosotros-text h2 {
+    font-size: 32px;
+    color: #1E2A4A;
+    margin-bottom: 15px;
+}
+
+.nosotros-text p {
+    font-size: 18px;
+    color: #333;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.nosotros-text strong {
+    color: #698b9a;
+}
+
+.services {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+}
+
+.service {
+  flex: 1 1 300px;
+  padding: 20px;
+  margin: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #fff;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.service:hover {
+  transform: scale(1.05);
+}
+
+#nosotros {
+    background-color: #f8f9fa;
+    padding: 80px 20px;
+}
+
+.nosotros-container {
+    flex: 1 1 300px;
+  padding: 20px;
+  margin: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #fff;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Separa el texto y la imagen */
+    max-width: 1100px;
+    margin: 0 auto;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.nosotros-text {
+    flex: 1;
+        text-align: justify;
+
+    min-width: 300px;
+}
+
+.nosotros-text h2 {
+    font-size: 32px;
+    color: #1E2A4A;
+    margin-bottom: 15px;
+}
+
+.nosotros-text p {
+    font-size: 18px;
+    color: #333;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.nosotros-text strong {
+    color: #698b9a;
+}
+
+.nosotros-img {
+    flex: 1;
+    text-align: right; /* Alinea la imagen a la derecha */
+    min-width: 250px;
+}
+
+.nosotros-img img {
+    width: 80%; /* Reduce el tamaño de la imagen */
+    max-width: 300px; /* Ajusta el tamaño máximo */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+ #empresas {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f8f9fa; /* Fondo claro */
+}
+
+.empresas-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px; /* Espacio entre imágenes */
+    padding: 20px;
+}
+
+.empresa-img {
+    width: 150px; /* Tamaño uniforme */
+    height: 100px; /* Altura fija para alineación */
+    object-fit: contain; /* Ajusta la imagen sin deformarla */
+    background-color: white; /* Fondo blanco para imágenes con transparencia */
+    padding: 10px; /* Espaciado interno para imágenes más pequeñas */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.empresa-img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.btn-outline-primary {
+    border-color: #05050569;
+    color: #050505;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-outline-primary:hover {
+    background-color: #05050569;
+    color: white;
+}
