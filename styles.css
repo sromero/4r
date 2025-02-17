@@ -15,7 +15,6 @@ header {
     width: auto;
 }
 .hero {
-
     background: linear-gradient(to bottom, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 40%), 
                 url('woman-working-as-doctor.jpg') no-repeat left 10% top 25% / cover;
      min-height: 60vh;
@@ -24,6 +23,13 @@ header {
     justify-content: center;
     color: #f8f9fa;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+@media (max-width: 768px) {
+    .hero {
+        background: linear-gradient(to bottom, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 40%),
+        url('backImage.jpg') no-repeat left 100% top 0% / cover;
+        text-shadow: 2px 2px 4px rgb(0 0 0);
+    }
 }
 .hero-content {
     display: flex;
@@ -111,7 +117,7 @@ background: linear-gradient(90deg, #798598, #05050569);
 }
 
 .navbar-nav .nav-link:hover {
-    color: rgb(96 242 255);
+    color: rgb(105, 149, 200);
 }
 
 
