@@ -10,12 +10,12 @@ header {
 }
 
 .logo-img {
-    height: 80px; /* Ajusta según necesites */
+    height: 80px;
     width: auto;
 }
 
 .hero {
-    background: linear-gradient(to bottom, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 40%), 
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 40%),
                 url('woman-working-as-doctor.jpg') no-repeat left 10% top 25% / cover;
      min-height: 60vh;
     align-content: center;
@@ -28,7 +28,7 @@ header {
 @media (max-width: 768px) {
     .hero {
         background: linear-gradient(to bottom, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 40%),
-        url('backImage.jpg') no-repeat left 100% top 0% / cover;
+        url('ddoc.jpg') no-repeat left 100% top 0% / cover;
         text-shadow: 2px 2px 4px rgb(0 0 0);
     }
 }
@@ -36,11 +36,11 @@ header {
 .hero-content {
     display: flex;
     flex-direction: column;
-    align-items: flex-start; /* Alinea el texto a la izquierda */
-    text-align: left; /* Asegura que el texto esté alineado a la izquierda */
+    align-items: flex-start;
+    text-align: left;
     gap: 10px;
-    max-width: 700px; /* Limita el ancho del contenido para mejor lectura */
-    padding-left: 10px; /* Ajusta según la necesidad para separarlo del borde */
+    max-width: 700px;
+    padding-left: 10px;
 }
 
 .hero h2 {
@@ -138,7 +138,7 @@ background: linear-gradient(90deg, #798598, #05050569);
     text-align: justify;
     display: flex;
     align-items: center;
-    justify-content: space-between; /* Separa el texto y la imagen */
+    justify-content: space-between;
     max-width: 1100px;
     margin: 0 auto;
     gap: 30px;
@@ -185,8 +185,6 @@ background: linear-gradient(90deg, #798598, #05050569);
     transition: transform 0.3s ease;
 }
 
-
-/* Estilo adicional para las tarjetas */
 .service-card {
     border-radius: 10px;
     background-color: #fff;
@@ -249,7 +247,7 @@ background: linear-gradient(90deg, #798598, #05050569);
 
     display: flex;
     align-items: center;
-    justify-content: space-between; /* Separa el texto y la imagen */
+    justify-content: space-between;
     max-width: 1100px;
     margin: 0 auto;
     gap: 30px;
@@ -282,13 +280,13 @@ background: linear-gradient(90deg, #798598, #05050569);
 
 .nosotros-img {
     flex: 1;
-    text-align: right; /* Alinea la imagen a la derecha */
+    text-align: right;
     min-width: 250px;
 }
 
 .nosotros-img img {
-    width: 80%; /* Reduce el tamaño de la imagen */
-    max-width: 300px; /* Ajusta el tamaño máximo */
+    width: 80%;
+    max-width: 300px;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
@@ -296,7 +294,7 @@ background: linear-gradient(90deg, #798598, #05050569);
  #empresas {
     text-align: center;
     padding: 50px 20px;
-    background-color: #f8f9fa; /* Fondo claro */
+    background-color: #f8f9fa;
 }
 
 .empresas-container {
@@ -304,16 +302,16 @@ background: linear-gradient(90deg, #798598, #05050569);
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    gap: 20px; /* Espacio entre imágenes */
+    gap: 20px;
     padding: 20px;
 }
 
 .empresa-img {
-    width: 150px; /* Tamaño uniforme */
-    height: 100px; /* Altura fija para alineación */
-    object-fit: contain; /* Ajusta la imagen sin deformarla */
-    background-color: white; /* Fondo blanco para imágenes con transparencia */
-    padding: 10px; /* Espaciado interno para imágenes más pequeñas */
+    width: 150px;
+    height: 100px;
+    object-fit: contain;
+    background-color: white;
+    padding: 10px;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
