@@ -9,11 +9,11 @@ header {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-
 .logo-img {
     height: 80px; /* Ajusta según necesites */
     width: auto;
 }
+
 .hero {
     background: linear-gradient(to bottom, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 40%), 
                 url('woman-working-as-doctor.jpg') no-repeat left 10% top 25% / cover;
@@ -24,6 +24,7 @@ header {
     color: #f8f9fa;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
+
 @media (max-width: 768px) {
     .hero {
         background: linear-gradient(to bottom, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 40%),
@@ -31,6 +32,7 @@ header {
         text-shadow: 2px 2px 4px rgb(0 0 0);
     }
 }
+
 .hero-content {
     display: flex;
     flex-direction: column;
@@ -40,6 +42,7 @@ header {
     max-width: 700px; /* Limita el ancho del contenido para mejor lectura */
     padding-left: 10px; /* Ajusta según la necesidad para separarlo del borde */
 }
+
 .hero h2 {
     font-size: 36px;
     margin: 15px;
@@ -52,22 +55,27 @@ header {
     color: #ffffff;
     margin: 15px;
 }
+
 .card {
     border: none;
     transition: transform 0.3s, box-shadow 0.3s;
 }
+
 .card:hover {
     transform: translateY(-10px);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
+
 .btn-primary {
     background: linear-gradient(90deg, #798598, #05050569);
     border: none;
 }
+
 footer {
     background: linear-gradient(90deg, #798598, #05050569);
     color: white;
 }
+
 footer p {
     margin: 0;
 }
@@ -166,6 +174,46 @@ background: linear-gradient(90deg, #798598, #05050569);
 }
 
 .service {
+    flex: 1 1 300px;
+    padding: 20px;
+    margin: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+
+/* Estilo adicional para las tarjetas */
+.service-card {
+    border-radius: 10px;
+    background-color: #fff;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.service-card i {
+    font-size: 50px;
+    color: #516993;
+}
+
+.service-card h3 {
+    font-size: 2rem;
+    color: #333;
+}
+
+.service-card p {
+    color: #666;
+}
+
+.empresa-service {
   flex: 1 1 300px;
   padding: 20px;
   margin: 10px;
@@ -175,6 +223,9 @@ background: linear-gradient(90deg, #798598, #05050569);
   text-align: center;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .service:hover {
@@ -282,4 +333,14 @@ background: linear-gradient(90deg, #798598, #05050569);
 .btn-outline-primary:hover {
     background-color: #05050569;
     color: white;
+}
+
+#map {
+    width: 500px;
+}
+
+@media (max-width: 767px) {
+    #map {
+        width: 300px;
+    }
 }
